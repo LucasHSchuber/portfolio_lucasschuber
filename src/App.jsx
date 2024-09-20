@@ -6,6 +6,7 @@ import './App.css'
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Index from "./pages/index"
+import Me from "./pages/me"
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
     <HashRouter>
         <div className="">
             <Routes> <Route path="/" element={<Index />} /></Routes>
+          </div>
+          <div className="">
+            <Routes> <Route path="/me" element={<Me />} /></Routes>
           </div>
     </HashRouter>
   )

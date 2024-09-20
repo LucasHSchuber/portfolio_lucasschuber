@@ -1,0 +1,70 @@
+/* MAIN CSS */
+
+#root {
+    min-width: 95vw; 
+    height: 100%; 
+}
+
+
+  .start-loader {
+    margin: auto;
+    margin-top: 40vh;
+    font-size: 1.5em;
+    font-style: italic;
+    animation: fade 3.5s ease-in-out forwards;
+    
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    35% {
+        opacity: 1; /* Start with opacity 0 */
+    }
+    75% {
+        opacity: 1; /* Start with opacity 0 */
+    }
+    100% {
+        opacity: 0; /* End with opacity 1 */
+    }
+}
+
+
+
+.wrapper{
+    padding: 1em 0;
+    /* margin: 0 -15%; */
+    
+}
+.left-inner-wrapper{
+    margin-top: 2em;
+    text-align: left;
+}
+.left-inner-wrapper h5{
+    
+}
+.left-inner-wrapper h6{
+    font-weight: 400;
+}
+
+.right-inner-wrapper{
+    margin-top: 10em;
+    text-align: right;
+}
+
+.right-inner-wrapper h6{
+    font-size: 2em !important;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: 0.5em;
+    margin-right: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.right-inner-wrapper h6:hover{
+    margin-right: 0.1em;
+}

@@ -1,0 +1,15 @@
+/* componenst css */
+
+.header h6{
+    font-size: 1em !important;
+    font-weight: 600 !important;
+    padding-top: 0.5em;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 0;
+}
+
+.header h6:hover{
+    color:grey;
+    margin-left: 0.05em;
+}
