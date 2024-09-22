@@ -17,8 +17,25 @@
     transition: 0.2s;
     margin-left: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    filter: hue-rotate(0deg) saturate(2);
+    animation: colorBtnChange 10s infinite linear;
+    
+}
+@keyframes colorBtnChange {
+    0% {
+        filter: hue-rotate(0deg) saturate(2);
+        opacity: 0.75;
+    }
+    100% {
+        filter: hue-rotate(360deg) saturate(2);
+        opacity: 0.75;
+    }
 }
 
+.header button:focus{
+    outline: none;
+    color: #94b7cb;
+}
 .header button:hover{
     /* color:grey; */
     color: #94b7cb;

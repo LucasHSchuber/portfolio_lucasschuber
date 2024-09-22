@@ -53,6 +53,10 @@
     position: fixed;
     bottom: 2em;
 }
+.outside-left a:focus{
+    color: #94b7cb;
+    outline: none;
+}
 .outside-left h6{
     font-weight: 700;
     font-size: 0.85em;
@@ -87,8 +91,23 @@
     height: 100vh;
     object-fit: cover;
     z-index: -1; 
-    /* filter: grayscale(45%); */
+    /* filter: saturate(2); 
+    filter: hue-rotate(240deg) saturate(2);
+    filter: grayscale(80%) hue-rotate(120deg);  */
+    filter: hue-rotate(0deg) saturate(2);
+    animation: colorChange 10s infinite linear;
 }
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg) saturate(2);
+        opacity: 0.2;
+    }
+    100% {
+        filter: hue-rotate(360deg) saturate(2);
+        opacity: 0.2;
+    }
+}
+
 
 /* .background-video {
     opacity: 0.1;
@@ -117,6 +136,7 @@
 .left-inner-wrapper{
     margin-top: 2em;
     text-align: left;
+    width: fit-content;
 }
 .left-inner-wrapper h5{
     color: rgb(74, 74, 74);
@@ -148,6 +168,8 @@
     margin-right: 0.1em;
     color: #94b7cb !important;
     text-decoration: none;
+    /* filter: hue-rotate(0deg) saturate(1); */
+    /* animation: colorChange 10s infinite linear; */
 }
 .right-inner-wrapper span{
     font-size: 0.9em !important;
@@ -213,7 +235,7 @@
     width: 20em;
     text-align: right;
     margin-top: 5em;
-    animation: fadeMe 2s ease-in-out forwards;
+    animation: fadeMe 1s ease-in-out forwards;
 }
 .me-box span{
     color: rgb(163, 163, 163);
@@ -237,7 +259,7 @@
     width: 30em;
     text-align: right;
     margin-top: 5em;
-    animation: fadeSkills 2s ease-in-out forwards;
+    animation: fadeSkills 1s ease-in-out forwards;
 }
 .skills-box h5{
     color: rgb(163, 163, 163);
@@ -252,5 +274,29 @@
     }
     100% {
         opacity: 1; 
+    }
+}
+
+/*    ------------- CONTACT ------------  */
+
+.contact-box{
+    position: fixed;
+    right: 5em;
+    bottom: 10em;
+    width: 20em;
+    text-align: right;
+    margin-top: 5em;
+    animation: fadeContact 1s ease-in-out forwards;
+}
+.contact-box span{
+    color: rgb(163, 163, 163);
+}
+
+@keyframes fadeContact {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

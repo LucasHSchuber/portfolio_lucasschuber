@@ -11,9 +11,13 @@ function Skills() {
   // define states
   const [onLoad, setOnLoad] = useState(false);
   
-  setTimeout(() => {
+  // setTimeout(() => {
+  //   setOnLoad(true);
+  // }, 500);
+
+  useEffect(() => {
     setOnLoad(true);
-  }, 500);
+  }, []);
 
   return (
   <div>
@@ -23,12 +27,12 @@ function Skills() {
 
       <div className='inner-wrapper d-flex justify-content-between'>
         
-        <div className='left-inner-wrapper'>
+        {/* <div className='left-inner-wrapper'>
           <h5>Lucas H. Schuber</h5>
           <h6>Fullstack Developer & Digital Designer</h6>
           <hr></hr>
           < Header />
-        </div>
+        </div> */}
         
       </div>
         <motion.div
@@ -37,29 +41,33 @@ function Skills() {
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5 }}
         >
-        <div>
+        {/* <div>
           <h6>Skills</h6>
-        </div>
+        </div> */}
         {onLoad && (
         <div className='skills-box'>
           {/* <h5 className='page-header'>Skills</h5> */}
           <h5 >Programming</h5>
-          <h6 >React.js</h6>
+          <h6 >React.js/Vue.js</h6>
           <h6 >Electron.js</h6>
           <h6 >Node.js</h6>
           <h6 >C#/.NET</h6>
+          <h6 >PHP/Laravel</h6>
+          <h6 >HTML/CSS/SASS</h6>
           {/* <hr style={{ width:"10em" }}></hr> */}
-          <h6 >GitHub</h6>
-          <h6 >SQL/NoSQL/SQLite databases</h6>
+          {/* <h6 >GitHub</h6> */}
+          <h6 >JavaScript/TypeScript</h6>
+          <h6 >SQL/NoSQL/SQLite Databases</h6>
           <h6 >Cloud Deployment with Azure, Vercel & Netlify</h6>
           {/* <hr style={{ width:"15em" }}></hr> */}'
           <br></br>
-          <h5 >UX</h5>
+          <h5 >UX/Design</h5>
           <h6 >Figma</h6>
+          <h6 >Abode Series</h6>
           <br></br>
           {/* <hr style={{ width:"15em" }}></hr> */}
-          <h5 >Design</h5>
-          <h6 >Abode Series</h6>
+          {/* <h5 >Design</h5>
+          <h6 >Abode Series</h6> */}
         </div>
         )}
         </motion.div>

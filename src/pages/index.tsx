@@ -51,12 +51,12 @@ const openInfoBox = (project) => {
         <div>  
           <div className=''>
             <div className='inner-wrapper d-flex justify-content-between'>
-              <div className='left-inner-wrapper'>
+              {/* <div className='left-inner-wrapper'>
                 <h5>Lucas H. Schuber</h5>
                 <h6>Fullstack Developer & Digital Designer</h6>
                 <hr />
                 <Header />
-              </div>
+              </div> */}
               <motion.div
                 initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -66,7 +66,7 @@ const openInfoBox = (project) => {
                 <div className='right-inner-wrapper'>
                   {projects && projects.map((project, index) => (
                     <div className='project' key={index}>
-                      <FontAwesomeIcon icon={faCircleQuestion} className='info-icon mr-3' onMouseOver={() => openInfoBox(project)} onMouseOut={() => setInfoBox({})}/>
+                      <FontAwesomeIcon icon={faCircleQuestion} className='info-icon mr-3' onClick={()=> openInfoBox(project)}/>
                         <span>{project.info} / {project.year}</span>
                         <a href={project.domain} target="_blank">{project.project}</a>
 

@@ -13,10 +13,15 @@ function Me() {
   // define states
   const [onLoad, setOnLoad] = useState(false);
   
-  setTimeout(() => {
-    setOnLoad(true);
-  }, 500);
+  // setTimeout(() => {
+  //   setOnLoad(true);
+  // }, 500);
 
+  useEffect(() => {
+    setOnLoad(true);
+  }, []);
+
+  
   return (
   <div>
     <div>
@@ -25,12 +30,12 @@ function Me() {
    
       <div className='inner-wrapper d-flex justify-content-between'>
         
-        <div className='left-inner-wrapper'>
+        {/* <div className='left-inner-wrapper'>
           <h5>Lucas H. Schuber</h5>
           <h6>Fullstack Developer & Digital Designer</h6>
           <hr></hr>
           < Header />
-        </div>
+        </div> */}
         
       </div>
         <motion.div
@@ -39,9 +44,9 @@ function Me() {
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5 }}
         >
-        <div>
+        {/* <div>
           <h6>Me</h6>
-        </div>
+        </div> */}
         {onLoad && (
         <div className='me-box'>
           <h6><span>Location:</span><b> Stockholm</b></h6>
