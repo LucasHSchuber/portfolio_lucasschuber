@@ -55,16 +55,16 @@ function Layout({ children }) {
         <div className='outside-left d-flex '>
             <h6 className=''>Lucas H. Schuber Portfolio</h6>
             <div className='ml-4'>
-              <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="www.linkedin.com/in/lucas-hammarstrand-schuber-80670320b" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
                 <FontAwesomeIcon icon={faLinkedin} className='brand-icon' />
               </a>
-              <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/lucasschuber" target="_blank" rel="noopener noreferrer" title='Instagram'>
                 <FontAwesomeIcon icon={faInstagram} className='brand-icon' />
               </a>
-              <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/LucasHSchuber" target="_blank" rel="noopener noreferrer" title='GitHub'>
                 <FontAwesomeIcon icon={faGithub} className='brand-icon' />
               </a>
-              <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/lucas.h.schuber/" target="_blank" rel="noopener noreferrer" title='Facebook'>
                 <FontAwesomeIcon icon={faFacebook} className='brand-icon' />
               </a>
             </div>

@@ -44,7 +44,8 @@ function Me() {
         </div>
         {onLoad && (
         <div className='me-box'>
-          <h6>I’m currently working as a software and system developer, where I build both desktop and web applications. My role also involves designing user interfaces with a strong focus on user experience. I strive to create simple, intuitive solutions that put the user at the center of everything I do.</h6>
+          <h6><span>Location:</span><b> Stockholm</b></h6>
+          <h6>I’m currently working as a <b>software/system developer</b>, where I build both desktop and web applications. My role also involves designing user interfaces with a strong focus on user experience. I strive to create simple, intuitive solutions that put the user at the center of everything I do.</h6>
         </div>
         )}
         </motion.div>

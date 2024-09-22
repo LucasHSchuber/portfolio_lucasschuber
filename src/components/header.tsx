@@ -10,12 +10,12 @@ const Header: React.FC = () => {
     }
 
     return (
-        <div className='mt-1 header d-flex '>
-            <h6 onClick={() => handleNavigation("/")}>Home</h6>
-            <h6 onClick={() => handleNavigation("/me")}>Me</h6>
-            <h6 onClick={() => handleNavigation("/projects")}>Projects</h6>
-            <h6 onClick={() => handleNavigation("/skills")}>Skills</h6>
-            <h6 onClick={() => handleNavigation("/contact")}>Contact</h6>
+        <div className='mt-1 header '>
+            <button onClick={() => handleNavigation("/")}>Home</button>
+            <button onClick={() => handleNavigation("/me")}>Me</button>
+            <button onClick={() => handleNavigation("/projects")}>Projects</button>
+            <button onClick={() => handleNavigation("/skills")}>Skills</button>
+            <button onClick={() => handleNavigation("/contact")}>Contact</button>
         </div>
     );
 };

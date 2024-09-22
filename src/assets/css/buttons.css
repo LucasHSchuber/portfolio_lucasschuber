@@ -1,0 +1,10 @@
+/* buttons.css */
+
+.info-icon{
+    color: rgb(145, 155, 168) !important;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.info-icon:hover{
+    color: rgb(0, 0, 0) !important;
+}
