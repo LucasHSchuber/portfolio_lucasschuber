@@ -51,6 +51,7 @@ function Me() {
         <div className='me-box'>
           <h6><span>Location:</span><b> Stockholm</b></h6>
           <h6>I’m currently working as a <b>software/system developer</b>, where I build both desktop and web applications. My role also involves designing user interfaces with a strong focus on user experience. I strive to create simple, intuitive solutions that put the user at the center of everything I do.</h6>
+          <h6 className='mt-4'> I hold a <b>Higher Education Diploma with specialization in Computer Engineering </b>from Mittuniversitetet, and a <b>Bachelor of Science in Informatics</b> from Högskolan Kristianstad</h6>
         </div>
         )}
         </motion.div>

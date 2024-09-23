@@ -1,5 +1,10 @@
 /* buttons.css */
 
+
+.button:focus{
+    outline: color(srgb red green blue);
+}
+
 .info-icon{
     color: rgb(145, 155, 168) !important;
     cursor: pointer;
@@ -10,4 +15,70 @@
     color: rgb(0, 0, 0) !important;
 }
 
+.color-button {
+    border: 0.5px solid rgb(156, 156, 156);
+    border-radius: 1px;
+    background-color: rgb(255, 255, 255, 0.25);
+    padding: 0 1.5em;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    /* filter: hue-rotate(0deg) saturate(0.5);
+    animation: colorButton 10s infinite linear; */
+}
+.color-button:focus{
+    outline: none;
+}
+.color-button:hover {
+    background-color: rgb(255, 255, 255, 0.55);
+}
+/* 
+@keyframes colorButton {
+    0% {
+        filter: hue-rotate(0deg) saturate(0.5);
+        opacity: 1;
+    }
+    100% {
+        filter: hue-rotate(360deg) saturate(0.5);
+        opacity: 1;
+    }
+} */
 
+.user-popup-button{
+    border:none;
+    border-radius: 3px;
+    background-color: rgb(239, 239, 239);
+    padding: 0.5em 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+.user-popup-button:hover{
+    background-color: rgb(239, 239, 239, 0.8);
+}
+
+.mailto-button{
+    border: 0.5px solid rgb(156, 156, 156);
+    border-radius: 1px;
+    background-color: rgb(255, 255, 255, 0.25);
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.mailto-button:focus{
+    outline: none;
+}
+.mailto-button:hover{
+    background-color: rgb(255, 255, 255, 0.55);
+
+}

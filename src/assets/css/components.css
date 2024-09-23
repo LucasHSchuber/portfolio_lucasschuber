@@ -17,8 +17,8 @@
     transition: 0.2s;
     margin-left: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    filter: hue-rotate(0deg) saturate(2);
-    animation: colorBtnChange 10s infinite linear;
+    /* filter: hue-rotate(0deg) saturate(2);
+    animation: colorBtnChange 10s infinite linear; */
     
 }
 @keyframes colorBtnChange {
@@ -35,9 +35,21 @@
 .header button:focus{
     outline: none;
     color: #94b7cb;
+    /* filter: hue-rotate(0deg) saturate(2);
+    animation: colorBtnChange 10s infinite linear; */
+}
+.button-colorfy button:focus{
+    outline: none;
+    color: #94b7cb;
+    filter: hue-rotate(0deg) saturate(2);
+    animation: colorBtnChange 10s infinite linear;
 }
 .header button:hover{
     /* color:grey; */
     color: #94b7cb;
     margin-left: 0.05em;
 }
+/* .button-colorfy button:hover{
+    filter: hue-rotate(0deg) saturate(2) !important;
+    animation: colorBtnChange 10s infinite linear !important;
+} */
