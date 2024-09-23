@@ -56,7 +56,7 @@
     outline: none;
     font-size: 0.9em;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
     transition: 0.2s;
 }
 .user-popup-button:hover{
@@ -80,5 +80,25 @@
 }
 .mailto-button:hover{
     background-color: rgb(255, 255, 255, 0.55);
+}
 
+.close-popup-button{
+    margin: 0.5em 20% 0 0 !important;
+    font-size: 1.2em;
+    font-weight: 900;
+    border: none;
+    background-color: inherit;
+    color: white;
+    padding: 0em 0.6em;
+    margin: 0;
+    height: 2em !important;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.close-popup-button:focus{
+    outline: none;
+}
+.close-popup-button:hover{
+    background-color: rgb(129, 129, 129);
 }

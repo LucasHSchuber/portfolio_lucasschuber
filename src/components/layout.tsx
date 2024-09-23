@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, } from '@fortawesome/free-solid-svg-icons';
+import { faTrash, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import video from "../assets/videos/bg3.mp4";
@@ -71,7 +71,6 @@ function Layout({ children }) {
 
   return (
     <div>
-        
         {loading ? (
          <div className='start-loader'>Lucas H. Schuber</div>
         ) : (
@@ -83,17 +82,20 @@ function Layout({ children }) {
               transition={{ duration: 1.5 }}
           >
 
-          <div>
 
           {popUp && (
             <div className={`user-popup-box ${popUp ? "popup-animation" : ""}`}>
-                  <h6>What's the purpose of your visit?</h6>
-                  <p>By spcificying your role below you will inform me on the purpose of your visit to this portfolio</p>
+                  <div className='d-flex justify-content-between'>
+                    <h6>Hello Stranger</h6>
+                    <button className='close-popup-button' title='Close' onClick={() => setPopUp(false)}><FontAwesomeIcon icon={faTimes} /></button>
+                  </div>
+                  <p>Your insights matter! Please select your role below to help me understand the purpose of your visit.</p>
                   <button className='user-popup-button' onClick={() => sendClickData('Visitor')}>Visitor</button>
                   <button className='user-popup-button mx-2' onClick={() => sendClickData('Recruiter')}>Recruiter</button>
             </div>
-            )}
+          )}
 
+          <div className={popUp ? "fade-page" : ""}>
             <video autoPlay loop muted className={`background-video ${colorfy ? "colorfy-bg" : ""}`}>
             <source  src={video} type="video/mp4" />
             Your browser does not support the video tag.
@@ -134,7 +136,6 @@ function Layout({ children }) {
               </div> 
               {children} 
             </div>
-
         </div>
        </motion.div>
         )}
