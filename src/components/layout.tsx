@@ -43,7 +43,7 @@ function Layout({ children }) {
         const timer = setTimeout(() => {
             setPopUp(true);
             sessionStorage.setItem("popup", "Yes");
-        }, 2000);
+        }, 10000);
         return () => clearTimeout(timer)
       } else {
         setPopUp(false); 
