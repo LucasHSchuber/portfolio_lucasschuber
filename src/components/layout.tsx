@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+
+import { API_URL } from '../../apiConfig.js';
+
 import video from "../assets/videos/bg3.mp4";
 
 import Header from './header';
@@ -52,8 +55,9 @@ function Layout({ children }) {
 
 
     const sendClickData = (role) => {
+      console.log('API_URL', API_URL);
       setConfirmPopUp(true);
-      fetch('http://localhost:5000/send-email', {
+      fetch(`${API_URL}send-email`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ role }),
