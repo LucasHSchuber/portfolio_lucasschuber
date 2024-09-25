@@ -16,6 +16,7 @@ function Layout({ children }) {
     const [loading, setLoading] = useState(true)
     const [colorfy, setColorfy] = useState(true)
     const [popUp, setPopUp] = useState(false)
+    const [confirmPopUp, setConfirmPopUp] = useState(false)
   
 
     useEffect(() => {
@@ -25,7 +26,7 @@ function Layout({ children }) {
         const timer = setTimeout(() => {
           sessionStorage.setItem("loader", "Yes");
           setLoading(false); 
-        }, 4000);
+        }, 3700);
         return () => clearTimeout(timer);
       } else {
         setLoading(false); 
@@ -38,21 +39,21 @@ function Layout({ children }) {
     };
 
     useEffect(() => {
-      // if (!sessionStorage.getItem("popup")) {
+      if (!sessionStorage.getItem("popup")) {
         const timer = setTimeout(() => {
             setPopUp(true);
             sessionStorage.setItem("popup", "Yes");
-        }, 2000);
+        }, 10000);
         return () => clearTimeout(timer)
-      // } else {
-      //   setPopUp(false); 
-      // }
+      } else {
+        setPopUp(false); 
+      }
     }, []);
 
 
 
     const sendClickData = (role) => {
-      setPopUp(false);
+      setConfirmPopUp(true);
       fetch('http://localhost:5000/send-email', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -61,18 +62,30 @@ function Layout({ children }) {
       .then(response => response.json())
       .then(data => {
           console.log(`Email sent for ${role}`);
+          setConfirmPopUp(true);
           setPopUp(false);
       })
       .catch((error) => {
           console.error('Error:', error);
+          setConfirmPopUp(true);
           setPopUp(false);
       });
+      setPopUp(false);
   };
+
+  useEffect(() => {
+    if (confirmPopUp) {
+      const timer = setTimeout(() => {
+          setConfirmPopUp(false);
+      }, 3000);
+      return () => clearTimeout(timer)
+    };
+  }, [confirmPopUp]);
 
   return (
     <div>
         {loading ? (
-         <div className='start-loader'>Lucas H. Schuber</div>
+         <div className='start-loader mr-5'>Lucas H. Schuber</div>
         ) : (
 
         <motion.div
@@ -94,8 +107,14 @@ function Layout({ children }) {
                   <button className='user-popup-button mx-2' onClick={() => sendClickData('Recruiter')}>Recruiter</button>
             </div>
           )}
+          {confirmPopUp && (
+            <div className={`user-popup-confirm-box ${confirmPopUp ? "popup-confrim-animation" : ""}`}>
+                    <h6>Thank you!</h6>
+            </div>
+          )} 
 
-          <div className={popUp ? "fade-page" : ""}>
+          {/* <div className={popUp ? "fade-page" : ""}> */}
+          <div>
             <video autoPlay loop muted className={`background-video ${colorfy ? "colorfy-bg" : ""}`}>
             <source  src={video} type="video/mp4" />
             Your browser does not support the video tag.

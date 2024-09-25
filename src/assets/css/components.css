@@ -53,3 +53,10 @@
     filter: hue-rotate(0deg) saturate(2) !important;
     animation: colorBtnChange 10s infinite linear !important;
 } */
+
+
+@media screen and (max-width: 771px) {
+    .header{
+        display: flex !important;
+    }
+}

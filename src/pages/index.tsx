@@ -66,7 +66,7 @@ const openInfoBox = (project) => {
                 <div className='right-inner-wrapper'>
                   {projects && projects.map((project, index) => (
                     <div className='project' key={index}>
-                      <FontAwesomeIcon icon={faCircleQuestion} className='info-icon mr-3' onClick={()=> openInfoBox(project)}/>
+                      <FontAwesomeIcon icon={faCircleQuestion} title='Information' className='info-icon mr-3' onClick={()=> openInfoBox(project)}/>
                         <span>{project.info} / {project.year}</span>
                         <a href={project.domain} target="_blank">{project.project}</a>
 

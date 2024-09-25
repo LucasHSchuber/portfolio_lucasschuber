@@ -12,11 +12,12 @@ app.use(express.json());
 
 app.post('/send-email', (req, res) => {
     const { role } = req.body;
-
+    console.log("env file:", env);
     console.log("/send-email triggered...")
 
     const transporter = nodemailer.createTransport({
-        service: 'Outlook',
+        service: 'Outlook365',
+        secure: false,
         auth: {
             user: env.user,
             pass: env.pass
@@ -24,8 +25,8 @@ app.post('/send-email', (req, res) => {
     });
 
     const mailOptions = {
-        from: 'lucas.hammarstrand@hotmail.com',
-        to: 'lucas.hammarstrand@hotmail.com',
+        from: env.user,
+        to: env.user,
         subject: `New ${role} Click`,
         text: `A user clicked on the ${role} button.`
     };
