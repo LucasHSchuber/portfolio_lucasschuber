@@ -43,13 +43,12 @@ function Layout({ children }) {
         const timer = setTimeout(() => {
             setPopUp(true);
             sessionStorage.setItem("popup", "Yes");
-        }, 10000);
+        }, 2000);
         return () => clearTimeout(timer)
       } else {
         setPopUp(false); 
       }
     }, []);
-
 
 
     const sendClickData = (role) => {
@@ -59,28 +58,34 @@ function Layout({ children }) {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ role }),
       })
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to send email');
+        }
+        return response.json();
+      })
       .then(data => {
-          console.log(`Email sent for ${role}`);
+        console.log('Email sent:', data);
           setConfirmPopUp(true);
           setPopUp(false);
       })
       .catch((error) => {
           console.error('Error:', error);
-          setConfirmPopUp(true);
+          // setConfirmPopUp(true);
           setPopUp(false);
       });
-      setPopUp(false);
-  };
-
-  useEffect(() => {
-    if (confirmPopUp) {
-      const timer = setTimeout(() => {
-          setConfirmPopUp(false);
-      }, 3000);
-      return () => clearTimeout(timer)
+      setPopUp(false); 
     };
-  }, [confirmPopUp]);
+
+
+    useEffect(() => {
+      if (confirmPopUp) {
+        const timer = setTimeout(() => {
+            setConfirmPopUp(false);
+        }, 3000);
+        return () => clearTimeout(timer)
+      };
+    }, [confirmPopUp]);
 
   return (
     <div>
@@ -102,9 +107,11 @@ function Layout({ children }) {
                     <h6>Hello Stranger</h6>
                     <button className='close-popup-button' title='Close' onClick={() => setPopUp(false)}><FontAwesomeIcon icon={faTimes} /></button>
                   </div>
-                  <p>Your insights matter! Please select your role below to help me understand the purpose of your visit.</p>
-                  <button className='user-popup-button' onClick={() => sendClickData('Visitor')}>Visitor</button>
-                  <button className='user-popup-button mx-2' onClick={() => sendClickData('Recruiter')}>Recruiter</button>
+                  <p className='mt-2'>Your insights matter! Please select your role below to help me understand the purpose of your visit.</p>
+                  <div className='mt-4'>
+                    <button className='user-popup-button' onClick={() => sendClickData('Visitor')}>Visitor</button>
+                    <button className='user-popup-button mx-2' onClick={() => sendClickData('Recruiter')}>Recruiter</button>
+                  </div>
             </div>
           )}
           {confirmPopUp && (
