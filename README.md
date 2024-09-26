@@ -2,7 +2,6 @@
 
 ### React + Vite + Node.js
 
-#### client + server 
 #### client - react app
 #### server - next.js node.js
 
