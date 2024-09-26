@@ -13,8 +13,10 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-
-
+// GET test route
+app.get('/', (req, res) => {
+    res.send('Welcome to the API for Lucas H. Schuber portoflio! It is create by me, Lucas H. Schuber, and includes this get route and a sned-email made with nodemailer. Have a great day!'); // Response for the root URL
+});
 
 // route for Nodemailer
 app.post('/send-email', (req, res) => {
