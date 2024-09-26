@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import cors from 'cors';
 
 import dotenv from 'dotenv';
-import env from "./env.js"
+// import env from "./env.js"
 
 dotenv.config(); // Load environment variables from .env file
 
@@ -21,9 +21,6 @@ app.post('/send-email', (req, res) => {
     const { role } = req.body;
     console.log("/send-email triggered...");
     console.log("Request received:", req.body);
-    // console.log("gmail_user", process.env.GMAIL_USER);
-    // console.log("gmail_pass", process.env.GMAIL_PASS);
-    // console.log("process.env", process.env);
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
