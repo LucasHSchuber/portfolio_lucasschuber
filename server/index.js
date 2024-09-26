@@ -56,4 +56,5 @@ app.post('/send-email', (req, res) => {
 //LISTEN
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`)
+    console.log(`See server on http://localhost:${port}`)
 })
