@@ -12,7 +12,7 @@ import { API_URL } from '../../apiConfig.js';
 
 import video from "../assets/videos/bg3.mp4";
 
-import Header from './header';
+import Header from './header.js';
 
 function Layout({ children }) {
 

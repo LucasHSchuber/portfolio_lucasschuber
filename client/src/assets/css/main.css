@@ -291,9 +291,7 @@
         opacity: 1;
     }
 }
-.info-box .title {
-    
-}
+
 .info-box .description {
     font-style: italic;
 }
@@ -302,9 +300,6 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .wrapper{
-        /* border: none; */
-    }
     .left-inner-wrapper h5{
         font-size: 2em;
     }
