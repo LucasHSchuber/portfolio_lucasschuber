@@ -91,6 +91,9 @@ function Layout({ children }) {
       };
     }, [confirmPopUp]);
 
+
+
+    
   return (
     <div>
         {loading ? (
@@ -154,7 +157,7 @@ function Layout({ children }) {
               </h6>
             </div>
 
-            <div className="wrapper">  
+            <div className="wrapper" >  
               <div className='left-inner-wrapper'>
                 <h5>Lucas H. Schuber</h5>
                 <div className='d-flex'>
@@ -164,7 +167,9 @@ function Layout({ children }) {
                 <hr />
                 <Header colorfy={colorfy} />
               </div> 
-              {children} 
+              <div className='content'>
+              {children}
+              </div> 
             </div>
         </div>
        </motion.div>

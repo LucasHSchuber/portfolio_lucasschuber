@@ -42,28 +42,21 @@ const openInfoBox = (project) => {
   setInfoBox(project);
 };
 
+
+
   return (
 
-    <div>
-      {/* {loading ? (
-        <div className='start-loader'>Lucas H. Schuber</div>
-      ) : ( */}
-        <div>  
-          <div className=''>
-            <div className='inner-wrapper d-flex justify-content-between'>
-              {/* <div className='left-inner-wrapper'>
-                <h5>Lucas H. Schuber</h5>
-                <h6>Fullstack Developer & Digital Designer</h6>
-                <hr />
-                <Header />
-              </div> */}
+    <div className='d-flex' onClick={() => infoBox.project ? setInfoBox({}) : null}>
+          
+            <div className='inner-wrapper' >
+      
               <motion.div
                 initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 1.5 }}
               >
-                <div className='right-inner-wrapper'>
+                <div className='right-inner-wrapper' >
                   {projects && projects.map((project, index) => (
                     <div className='project' key={index}>
                       <FontAwesomeIcon icon={faCircleQuestion} title='Information' className='info-icon mr-3' onClick={()=> openInfoBox(project)}/>
@@ -82,10 +75,6 @@ const openInfoBox = (project) => {
                   ))}
                 </div>
               </motion.div>
-
-              
-            </div>
-          </div>
          
         </div>
       {/* )} */}

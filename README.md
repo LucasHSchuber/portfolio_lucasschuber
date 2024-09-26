@@ -15,6 +15,6 @@ A node.js next.js server currently including two routes:
 
 Future notes:
 To publish server to vercel:
-- inlude vercel.json file
+- inlude the vercel.json file
 - make a automatic get "/" route to make sure it works with verce.app.domain 
 - preferably separate client and server in different folders in project root
