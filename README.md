@@ -2,9 +2,9 @@
 
 ### React + Vite + Node.js
 
-client + server 
-client - react app
-server - next.js node.js
+#### client + server 
+#### client - react app
+#### server - next.js node.js
 
 CLIENT: 
 A create-react-app application displaying my work.
