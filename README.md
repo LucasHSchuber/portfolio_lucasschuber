@@ -1,9 +1,10 @@
-# React + Vite + Node.js
 # lucasschuberportoflio
-# client + server
- 
-## client - react app
-## server - next.js node.js
+
+### React + Vite + Node.js
+
+client + server 
+client - react app
+server - next.js node.js
 
 CLIENT: 
 A create-react-app application displaying my work.
