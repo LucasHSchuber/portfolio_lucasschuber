@@ -27,13 +27,6 @@ function Skills() {
 
       <div className='inner-wrapper d-flex justify-content-between'>
         
-        {/* <div className='left-inner-wrapper'>
-          <h5>Lucas H. Schuber</h5>
-          <h6>Fullstack Developer & Digital Designer</h6>
-          <hr></hr>
-          < Header />
-        </div> */}
-        
       </div>
         <motion.div
             initial={{ opacity: 0 }}

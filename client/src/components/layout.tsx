@@ -140,14 +140,14 @@ function Layout({ children }) {
                 <a href="https://www.linkedin.com/in/lucas-hammarstrand-schuber-80670320b/" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
                   <FontAwesomeIcon icon={faLinkedin} className='brand-icon' />
                 </a>
-                <a href="https://instagram.com/lucasschuber" target="_blank" rel="noopener noreferrer" title='Instagram'>
-                  <FontAwesomeIcon icon={faInstagram} className='brand-icon' />
-                </a>
                 <a href="https://github.com/LucasHSchuber" target="_blank" rel="noopener noreferrer" title='GitHub'>
                   <FontAwesomeIcon icon={faGithub} className='brand-icon' />
                 </a>
                 <a href="https://www.facebook.com/lucas.h.schuber/" target="_blank" rel="noopener noreferrer" title='Facebook'>
                   <FontAwesomeIcon icon={faFacebook} className='brand-icon' />
+                </a>
+                <a href="https://instagram.com/lucasschuber" target="_blank" rel="noopener noreferrer" title='Instagram'>
+                  <FontAwesomeIcon icon={faInstagram} className='brand-icon' />
                 </a>
               </div>
             </div>

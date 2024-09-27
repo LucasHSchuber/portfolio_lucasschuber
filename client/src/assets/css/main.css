@@ -372,7 +372,7 @@
 .me-box{
     position: fixed;
     right: 5em;
-    bottom: 10em;
+    bottom: 6em;
     width: 20em;
     text-align: right;
     margin-top: 5em;
@@ -381,6 +381,19 @@
 .me-box span{
     color: rgb(163, 163, 163);
 }
+.me-brand-icon{
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid rgb(103, 103, 103);
+    font-size: 1.6em;
+    color: rgb(37, 37, 37);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.me-brand-icon:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 
 @keyframes fadeMe {
     0% {
