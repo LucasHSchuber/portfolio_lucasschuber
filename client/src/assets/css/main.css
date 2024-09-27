@@ -36,6 +36,8 @@
 }
 
 
+/*    ------------- USER POP UP ------------  */
+
 
 .user-popup-box{
     position: fixed;
@@ -43,7 +45,7 @@
     bottom:2em;
     left: 1em;
     width: 35%;
-    height: 30%;
+    height: fit-content;
     background-color: #2e2e2e;
     color: rgb(246, 246, 246);
     z-index: 20;
@@ -123,6 +125,8 @@
         opacity: 0;
     }
 }
+
+
 
 .outside-top{
     position: fixed;
