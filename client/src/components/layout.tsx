@@ -97,7 +97,7 @@ function Layout({ children }) {
   return (
     <div>
         {loading ? (
-         <div className='start-loader mr-5'>Lucas H. Schuber</div>
+         <div className='start-loader'>Lucas H. Schuber</div>
         ) : (
 
         <motion.div
@@ -114,7 +114,7 @@ function Layout({ children }) {
                     <h6>Hello Stranger</h6>
                     <button className='close-popup-button' title='Close' onClick={() => setPopUp(false)}><FontAwesomeIcon icon={faTimes} /></button>
                   </div>
-                  <p className='mt-2'>Your insights matter! Please select your role below to help me understand the purpose of your visit.</p>
+                  <p>Your insights matter! Please select your role below to help me understand the purpose of your visit.</p>
                   <div className='mt-4'>
                     <button className='user-popup-button' onClick={() => sendClickData('Visitor')}>Visitor</button>
                     <button className='user-popup-button mx-2' onClick={() => sendClickData('Recruiter')}>Recruiter</button>

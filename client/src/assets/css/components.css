@@ -24,7 +24,7 @@
     color: rgb(231, 231, 231) !important;
     text-decoration: underline;
 } */
- 
+
 @keyframes colorBtnChange {
     0% {
         filter: hue-rotate(0deg) saturate(2);
@@ -61,6 +61,6 @@
 
 @media screen and (max-width: 771px) {
     .header{
-        display: flex !important;
+        /* display: flex !important; */
     }
 }

@@ -20,14 +20,7 @@ const Header: React.FC<HeaderProps> = ({ colorfy }) => {
         setLink(label);
         navigate(path);
     }
-
-    // useEffect(() => {
-    //   console.log('colorfy', colorfy);
-    // }, [colorfy]);
-
-    // useEffect(() => {
-    //   console.log('link', link);
-    // }, [link]);
+    
 
     return (
         <div className={`mt-1 header ${colorfy ? "button-colorfy" : ""}`}>
