@@ -11,6 +11,7 @@ import { faInstagram, faGithub, faFacebook, faLinkedin } from '@fortawesome/free
 import { API_URL } from '../../apiConfig.js';
 
 import video from "../assets/videos/bg3.mp4";
+import bgImage from "../assets/images/bg_phones.png";
 
 import Header from './header.js';
 
@@ -129,10 +130,13 @@ function Layout({ children }) {
 
           {/* <div className={popUp ? "fade-page" : ""}> */}
           <div>
-            <video autoPlay loop muted playsInline controls preload="auto" className={`background-video ${colorfy ? "colorfy-bg" : ""}`}>
+            {/* On larger screens */}
+            <video autoPlay loop muted playsInline className={`background-video ${colorfy ? "colorfy-bg" : ""}`}>
             <source  src={video} type="video/mp4" />
             Your browser does not support the video tag.
             </video>
+            {/* On smaller screens - phones */}
+            <img src={bgImage} alt="Background image" className={`background-image`}></img>
 
             <div className='outside-left d-flex '>
               <h6 className=''>Lucas H. Schuber Portfolio</h6>

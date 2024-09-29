@@ -59,11 +59,7 @@
 } */
 
 
-@media screen and (max-width: 771px) {
-    .header{
-        /* display: flex !important; */
-        
-    }
+@media screen and (max-width: 771px) {  
     .header button{
         color: black !important;
     }

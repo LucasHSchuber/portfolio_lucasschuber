@@ -235,19 +235,24 @@
     opacity: 0.1;
     /* filter: grayscale(100%); */
     /* animation: fadeBg 1.5s ease-in forwards; */
-
     /* filter: saturate(2); 
     filter: hue-rotate(240deg) saturate(2);
     filter: grayscale(80%) hue-rotate(120deg);  */
     /* filter: hue-rotate(0deg) saturate(2);
     animation: colorChange 10s infinite linear; */
 }
-/* Hide default play button on iOS */
-/* .background-video::-webkit-media-controls-start-playback-button {
-    display: none !important;
-} */
+.background-image {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover;
+    z-index: -10; 
+    opacity: 0.35;
+    filter: hue-rotate(0deg) saturate(2);
+}
 
-  
 .colorfy-bg {
     filter: hue-rotate(0deg) saturate(2);
     animation: colorChange 10s infinite linear, fadeBg 1s ease-in-out forwards;
@@ -269,6 +274,20 @@
     }
     100% {
         opacity:0.2;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    .background-image{
+        display: none;
+    }
+}
+@media screen and (max-width: 771px) {
+    .background-video{
+        display: none;
+    }
+    .background-image{
+        display: block;
     }
 }
 
