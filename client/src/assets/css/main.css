@@ -243,10 +243,10 @@
     animation: colorChange 10s infinite linear; */
 }
 /* Hide default play button on iOS */
-video::-webkit-media-controls-start-playback-button {
+/* .background-video::-webkit-media-controls-start-playback-button {
     display: none !important;
-    -webkit-appearance: none;
-  }
+} */
+
   
 .colorfy-bg {
     filter: hue-rotate(0deg) saturate(2);
@@ -294,9 +294,7 @@ video::-webkit-media-controls-start-playback-button {
     font-size: 1.2em;
     margin-top: 0.2em;
 }
-.inner-wrapper{
-    
-}
+
 .right-inner-wrapper{
     position: fixed; /* Keeps it fixed on the right side */
     right: 4em; /* Adjust as needed */

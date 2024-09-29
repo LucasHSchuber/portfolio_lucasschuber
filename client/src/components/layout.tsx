@@ -129,7 +129,7 @@ function Layout({ children }) {
 
           {/* <div className={popUp ? "fade-page" : ""}> */}
           <div>
-            <video autoPlay loop muted playsInline  preload="auto" poster="" className={`background-video ${colorfy ? "colorfy-bg" : ""}`}>
+            <video autoPlay loop muted playsInline controls preload="auto" className={`background-video ${colorfy ? "colorfy-bg" : ""}`}>
             <source  src={video} type="video/mp4" />
             Your browser does not support the video tag.
             </video>
