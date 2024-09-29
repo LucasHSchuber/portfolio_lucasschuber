@@ -12,6 +12,15 @@
     /* border: 1px solid black; */
 }
 
+/* .layout{
+
+}
+@media screen and (max-width: 980px) {
+    .layout {
+        max-height: 95vh !important;
+    }
+} */
+
 
 .start-loader {
     margin: auto;
@@ -233,6 +242,12 @@
     /* filter: hue-rotate(0deg) saturate(2);
     animation: colorChange 10s infinite linear; */
 }
+/* Hide default play button on iOS */
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+  
 .colorfy-bg {
     filter: hue-rotate(0deg) saturate(2);
     animation: colorChange 10s infinite linear, fadeBg 1s ease-in-out forwards;
