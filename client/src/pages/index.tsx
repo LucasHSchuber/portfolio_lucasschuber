@@ -67,7 +67,7 @@ const openInfoBox = (project) => {
                           <div className='info-box' onMouseOver={() => openInfoBox(project)} onMouseOut={() => setInfoBox({})}>
                             <h6 className='title'>{infoBox.project}</h6>
                             <p className='description'>{infoBox.description}</p>
-                            <img className='image' src={infoBox.src} width={350} alt={infoBox.project} />
+                            <img className='image' src={infoBox.src} alt={infoBox.project} />
                           </div>
                        )}
 

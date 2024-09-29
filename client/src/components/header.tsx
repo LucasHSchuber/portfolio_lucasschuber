@@ -13,11 +13,31 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ colorfy }) => {
-    //define states
-    const [link, setLink] = useState("Home");
-    const [menuOpen, setMenuOpen] = useState(false); // State for menu toggle
 
     const navigate = useNavigate(); 
+
+    //define states
+    const [link, setLink] = useState("");
+    const [menuOpen, setMenuOpen] = useState(false); // State for menu toggle
+
+
+
+
+    useEffect(() => {
+        const currentPath = window.location.hash;
+        console.log('window.location.hash', window.location.hash);
+        const initialLink = currentPath === '#/' ? 'Home' : currentPath.charAt(0).toUpperCase() + currentPath.slice(1); 
+        console.log('initialLink', initialLink);
+        const pop = initialLink.split('/').pop() || 'Home';
+        console.log('pop', pop);
+        // Capitalize the first letter of pop
+        const capitalizedPop = pop.charAt(0).toUpperCase() + pop.slice(1);
+        console.log('capitalizedPop', capitalizedPop);
+        setLink(capitalizedPop);
+    }, []);
+
+
+
 
     const isMobile = () => {
         return window.matchMedia('(max-width: 768px)').matches;

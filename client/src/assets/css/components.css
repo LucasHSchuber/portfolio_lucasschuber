@@ -69,8 +69,8 @@ background-color: #ddd;
         display: block;
         position: fixed;
         font-size: 1.4em;
-        top: 2em;
-        right: 3em;
+        top: 1.6em;
+        right: 2em;
         z-index: 100;
         /* color: white !important; */
     }

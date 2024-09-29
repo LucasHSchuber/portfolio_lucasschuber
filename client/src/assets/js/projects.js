@@ -7,6 +7,7 @@ import FlimPNG from "../images/flim.png"
 import EggbenefitPNG from "../images/Eggbenefit.png"
 import BrommaPNG from "../images/bromma.png"
 import BookiePNG from "../images/bookie.png"
+import NordfjallPNG from "../images/nordfjall.png"
 
 const projects = [
     {
@@ -78,7 +79,7 @@ const projects = [
       info: "JavaScript",
       description: "Nordfjäll is a simple E-commerse web application.",
       year: "2022",
-      src: FlimPNG,
+      src: NordfjallPNG,
       domain: "https://studenter.miun.se/~luha2200/DATATEKNIK/projekt_datateknik/index.html",
     },
   ] 

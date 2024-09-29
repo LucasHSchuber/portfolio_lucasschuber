@@ -300,7 +300,6 @@
     text-align: left;
     width: fit-content;
     z-index: 10;
-    
 }
 .left-inner-wrapper h5{
     color: rgb(74, 74, 74);
@@ -327,7 +326,6 @@
     padding: 15em 1em 10em 1em;
     scrollbar-width: none;
     scroll-behavior: smooth;
-
 }
 .right-inner-wrapper a{
     font-size: 3.8em !important;
@@ -365,7 +363,7 @@
     padding: 1.5em;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
     z-index: 10;
-    width: 25em;
+    width: 450px;
     animation: fadeInfo 0.5s ease-in-out forwards;
 }
 
@@ -374,6 +372,7 @@
 }
 .info-box .image {
     margin: 0;
+    width: 400px;
 }
 @keyframes fadeInfo {
     0% {
@@ -397,17 +396,31 @@
     }
     .left-inner-wrapper h5{
         font-size: 2em;
+        font-weight: 400 !important;
     }
     .left-inner-wrapper h6{
         font-size: 0.9em;
     }
     .right-inner-wrapper{
         bottom: 20%;
+        right: 2em !important; 
         top: 10em !important; 
-        font-size: 0.8em;
     }
     .right-inner-wrapper a{
-        font-size: 1.4em !important;
+        font-size: 1.1em !important;
+    }
+    
+    .info-box {
+        text-align: left;
+        position: fixed;
+        top: 25%;
+        left:10%;
+        padding: 1em;
+        width: 80%;
+        font-size: 0.7em;
+    }
+    .info-box .image {
+        width: 100%;
     }
 }
 @media screen and (max-width: 771px) {
@@ -418,16 +431,24 @@
     .wrapper hr{
         visibility: hidden;
     }
+    .left-inner-wrapper{
+        position: fixed;
+        top: 2em;
+        left: 2em;
+    }
     .right-inner-wrapper{
-        width: 25em;
-        /* top: 15em !important;  */
-        font-size: 0.75em;
+        /* font-size: 0.8em; */
+        top: 6em !important; 
+        right: 1em !important; 
+        width: 90% !important;
     }
     .right-inner-wrapper a{
-        font-weight: 400 !important;
+        font-weight: 500 !important;
+        font-size: 0.85em !important;
     }
     .right-inner-wrapper span{
-        display: none;
+        /* display: none; */
+        font-size: 0.6em !important;
     }
     .outside-left{
         visibility: hidden;
