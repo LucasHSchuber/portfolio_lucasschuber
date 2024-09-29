@@ -136,7 +136,7 @@ function Layout({ children }) {
             Your browser does not support the video tag.
             </video>
             {/* On smaller screens - phones */}
-            <img src={bgImage} alt="Background image" className={`background-image`}></img>
+            <img src={bgImage} alt="Background image" className={`background-image ${colorfy ? "colorfy-bg" : ""}`}></img>
 
             <div className='outside-left d-flex '>
               <h6 className=''>Lucas H. Schuber Portfolio</h6>

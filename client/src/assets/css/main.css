@@ -246,7 +246,7 @@
     top: 0;
     left: 0;
     width: 100vw; 
-    height: 100vh;
+    min-height: 100vh;
     object-fit: cover;
     z-index: -10; 
     opacity: 0.35;
@@ -315,15 +315,15 @@
 }
 
 .right-inner-wrapper{
-    position: fixed; /* Keeps it fixed on the right side */
-    right: 4em; /* Adjust as needed */
-    top: 0em; /* Start from the top of the viewport */
-    bottom: 0; /* Extend to the bottom of the viewport */
-    overflow-y: auto; /* Enables vertical scrolling */
-    height: 100vh; /* Full height of the viewport */
-    width: 50%; /* Adjust the width as needed */
-    text-align: right; /* Aligns content to the right */
-    z-index: 0; /* Make sure it stays above other content if necessary */
+    position: fixed; 
+    right: 4em; 
+    top: 0; 
+    bottom: 0;
+    overflow-y: auto;
+    height: 100vh; 
+    width: 50%; 
+    text-align: right; 
+    z-index: 0; 
     padding: 15em 1em 10em 1em;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -403,6 +403,7 @@
     }
     .right-inner-wrapper{
         bottom: 20%;
+        top: 10em !important; 
         font-size: 0.8em;
     }
     .right-inner-wrapper a{
@@ -412,17 +413,18 @@
 @media screen and (max-width: 771px) {
     .wrapper{
         border: none;
-        padding: 0;
+        padding: 0 !important;
     }
     .wrapper hr{
         visibility: hidden;
     }
     .right-inner-wrapper{
         width: 25em;
-        font-size: 0.7em;
+        /* top: 15em !important;  */
+        font-size: 0.75em;
     }
     .right-inner-wrapper a{
-        font-weight: 500 !important;
+        font-weight: 400 !important;
     }
     .right-inner-wrapper span{
         display: none;

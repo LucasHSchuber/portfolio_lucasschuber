@@ -10,9 +10,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0.75em;
-    /* padding-top: 0.5em; */
-    /* padding-right: 3em;
-    width: fit-content; */
     cursor: pointer;
     transition: 0.2s;
     margin-left: 0;
@@ -20,12 +17,8 @@
     /* filter: hue-rotate(0deg) saturate(2);
     animation: colorBtnChange 10s infinite linear; */
 }
-/* .header .active{
-    color: rgb(231, 231, 231) !important;
-    text-decoration: underline;
-} */
 
-@keyframes colorBtnChange {
+/* @keyframes colorBtnChange {
     0% {
         filter: hue-rotate(0deg) saturate(2);
         opacity: 0.75;
@@ -34,33 +27,113 @@
         filter: hue-rotate(360deg) saturate(2);
         opacity: 0.75;
     }
-}
+} */
 
 .header button:focus{
     outline: none;
-    /* color: #94b7cb; */
-    /* filter: hue-rotate(0deg) saturate(2);
-    animation: colorBtnChange 10s infinite linear; */
 }
-/* .button-colorfy button:focus{
-    outline: none;
-    color: #94b7cb;
-    filter: hue-rotate(0deg) saturate(2);
-    animation: colorBtnChange 10s infinite linear;
-} */
-.header button:hover{
-    /* color:grey; */
-    color: #94b7cb;
-    margin-left: 0.05em;
+.link-round-icon{
+    font-size: 10px;
+    padding: 6px 0 0 5px; 
 }
-/* .button-colorfy button:hover{
-    filter: hue-rotate(0deg) saturate(2) !important;
-    animation: colorBtnChange 10s infinite linear !important;
-} */
 
 
-@media screen and (max-width: 771px) {  
-    .header button{
-        color: black !important;
+
+.active {
+background-color: #ddd;
+}
+
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    /* font-size: 24px; */
+}
+
+    
+@media (min-width: 768px) {
+    .menu-links .button {
+        padding: 1px;
+        cursor: pointer;
     }
+/* Links for Desktop */
+    .menu-links {
+        display: flex;
+        flex-direction: column;
+    }
+}  
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        font-size: 1.4em;
+        top: 2em;
+        right: 3em;
+        z-index: 100;
+        /* color: white !important; */
+    }
+    .black-hamburger-menu {
+        color: rgb(34, 34, 34) !important;
+    }
+    .white-hamburger-menu {
+        color: white !important;
+        animation: changeColorMenu 0.3s ease-in-out forwards;
+    }
+    @keyframes changeColorMenu {
+        0% {
+            color: black;
+        }
+        100% {
+            color: rgb(245, 245, 245);
+        }
+    }
+    /* Initially hide links on mobile */
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: transparent;
+        z-index: 10000;
+
+    }
+    /* Show the links when the menu is open */
+    .menu-links.open {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw !important;
+        height: 23em; 
+        padding: 6.5em 0 0 1.5em;
+        background-color: #2e2e2e;
+        color: rgb(241, 241, 241) !important;
+        z-index: 50;
+        animation: slide-down 0.3s ease-in-out forwards;
+    }
+    @keyframes slide-down {
+        0% {
+            transform: translateY(-200px); 
+            opacity: 0; 
+        }
+        100% {
+            transform: translateY(0); 
+            opacity: 1;
+        }
+    }
+    .menu-links.open button {
+        color: rgb(243, 243, 243) !important;
+        font-size: 1.15em !important;
+        font-weight: 700 !important;
+        margin: 0 0 0 34%;
+        padding: 0.5em 1em;
+    }
+    .menu-links.open button:active {
+       outline: 1px solid rgb(206, 206, 206, 0.3) !important;
+    }
+    .link-round-icon{
+        font-size: 10px;
+        padding: 19px 0 0 5px; 
+    }
+    
 }
