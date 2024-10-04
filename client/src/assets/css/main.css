@@ -182,22 +182,22 @@
     color: rgb(53, 53, 53);
     /* transform: rotate(-90deg); */
 }
-.outside-left{
+.outside-bottom{
     position: fixed;
     bottom: 0.7em;
     z-index: 5;
 }
-.outside-left a:focus{
+.outside-bottom a:focus{
     color: #94b7cb;
     outline: none;
 }
-.outside-left h6{
+.outside-bottom h6{
     font-weight: 700;
     font-size: 0.85em;
     color: rgb(53, 53, 53);
     /* transform: rotate(-90deg); */
 }
-.outside-left a{
+.outside-bottom a{
     color: rgb(53, 53, 53);
     font-size: 1em;
     padding-bottom: 0.2em;
@@ -450,7 +450,7 @@
         /* display: none; */
         font-size: 0.6em !important;
     }
-    .outside-left{
+    .outside-bottom{
         visibility: hidden;
     }
     .outside-top{

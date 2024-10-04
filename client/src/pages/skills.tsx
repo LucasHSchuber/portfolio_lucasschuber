@@ -11,10 +11,7 @@ function Skills() {
   // define states
   const [onLoad, setOnLoad] = useState(false);
   
-  // setTimeout(() => {
-  //   setOnLoad(true);
-  // }, 500);
-
+  
   useEffect(() => {
     setOnLoad(true);
   }, []);

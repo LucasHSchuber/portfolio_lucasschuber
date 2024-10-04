@@ -41,9 +41,7 @@ function Me() {
               exit={{ opacity: 0 }}
               transition={{ duration: 1.5 }}
         >
-        {/* <div>
-          <h6>Me</h6>
-        </div> */}
+
         {onLoad && (
         <div className='me-box'>
           <h6><span>Location:</span><b> Stockholm</b></h6>
