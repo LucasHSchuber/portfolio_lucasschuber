@@ -13,16 +13,14 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ colorfy }) => {
-
-    const navigate = useNavigate(); 
-
     //define states
     const [link, setLink] = useState("");
     const [menuOpen, setMenuOpen] = useState(false); // State for menu toggle
 
+    const navigate = useNavigate(); 
 
 
-
+    // Find correct link when loaded 
     useEffect(() => {
         const currentPath = window.location.hash;
         console.log('window.location.hash', window.location.hash);
@@ -35,8 +33,6 @@ const Header: React.FC<HeaderProps> = ({ colorfy }) => {
         console.log('capitalizedPop', capitalizedPop);
         setLink(capitalizedPop);
     }, []);
-
-
 
 
     const isMobile = () => {

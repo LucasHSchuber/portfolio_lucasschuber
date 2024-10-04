@@ -141,7 +141,7 @@ function Layout({ children }) {
             <div className='outside-left d-flex '>
               <h6 className=''>Lucas H. Schuber Portfolio</h6>
               <div className='ml-4'>
-                <a href="https://www.linkedin.com/in/lucas-hammarstrand-schuber-80670320b/" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
+                <a href="https://www.linkedin.com/in/lucas-h-schuber-80670320b" target="_blank" rel="noopener noreferrer" title='LinkedIn'>
                   <FontAwesomeIcon icon={faLinkedin} className='brand-icon' />
                 </a>
                 <a href="https://github.com/LucasHSchuber" target="_blank" rel="noopener noreferrer" title='GitHub'>
