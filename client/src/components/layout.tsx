@@ -3,13 +3,12 @@ import { useState, useEffect } from 'react';
 
 import { motion } from 'framer-motion';
 
+// import fontawwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-
-import { API_URL } from '../../apiConfig.js';
-
+// import media
 import video from "../assets/videos/bg3.mp4";
 import bgImage from "../assets/images/bg_phones.png";
 
@@ -20,32 +19,30 @@ import Userpopupbox from '../assets/js/userpopupbox.js';
 
 function Layout({ children }) {
 
-    const [loading, setLoading] = useState(true)
-    const [colorfy, setColorfy] = useState(true)
+  const [loading, setLoading] = useState(true)
+  const [colorfy, setColorfy] = useState(true)
 
-  
 
-    useEffect(() => {
-      console.log("STARTED RUNNING");
-      // Check if the loader has already run
-      if (!sessionStorage.getItem("loader")) {
-        const timer = setTimeout(() => {
-          sessionStorage.setItem("loader", "Yes");
-          setLoading(false); 
-        }, 3700);
-        return () => clearTimeout(timer);
-      } else {
+  useEffect(() => {
+    console.log("STARTED RUNNING");
+    // Check if the loader has already run
+    if (!sessionStorage.getItem("loader")) {
+      const timer = setTimeout(() => {
+        sessionStorage.setItem("loader", "Yes");
         setLoading(false); 
-      }
-    }, []);
+      }, 3700);
+      return () => clearTimeout(timer);
+    } else {
+      setLoading(false); 
+    }
+  }, []);
 
 
-    const colorfyBg = () => {
-      setColorfy(!colorfy)
-    };
+  const colorfyBg = () => {
+    setColorfy(!colorfy)
+  };
 
 
-    
   return (
     <div className='layout'>
         {loading ? (
