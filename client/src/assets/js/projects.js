@@ -14,7 +14,7 @@ const projects = [
       project: "Photographer Portal",
       info: "Electron.js/React.js/Node.js/SQLite",
       year: "2024",
-      description: "This in-house desktop application for Mac and Windows is used by around 150 photographers at Express-Bild. It has 10 tables in an SQLite database and currently features two admin interfaces to manage the Knowledge Base and News. The Photographer Portal streamlines and digitalizes their work and simplifies large image/file uploads from photographers to the company via an FTP server. The software runs both online and offline.",
+      description: "I'm the creator of this in-house desktop application for Mac and Windows is used by around 150 photographers at Express-Bild. It has 10 tables in an SQLite database and currently features two admin interfaces to manage the Knowledge Base and News. The Photographer Portal streamlines and digitalizes their work and simplifies large image/file uploads from photographers to the company via an FTP server. The software runs both online and offline.",
       src: PpPNG,
       domain: "https://youtu.be/8zDcvNOYkak",
     },
