@@ -78,6 +78,11 @@ const Header: React.FC<HeaderProps> = ({ colorfy }) => {
               {link === "Contact" && <FontAwesomeIcon icon={faCircle} className='link-round-icon'/>}
             </div>
           </div>
+
+          <div className='mt-4 old-portfolio'>
+            <h6 style={{ width: "15em" }}>Visit my old portfolio to see more design work:</h6>
+            <a className='' title='https://lucasschuberportfolioold.vercel.app/#/' href="https://lucasschuberportfolioold.vercel.app/#/" target="_blank">lucasschuberportfolioold.vercel.app</a>
+          </div>
         </div>
       );
 }

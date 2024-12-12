@@ -51,6 +51,22 @@ background-color: #ddd;
     /* font-size: 24px; */
 }
 
+.old-portfolio h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.1em;
+}
+.old-portfolio a {
+    text-decoration: underline;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: black;
+    transition: 0.2s;
+}
+.old-portfolio a:hover {
+    color: gray;
+}
     
 @media (min-width: 768px) {
     .menu-links .button {
