@@ -23,7 +23,7 @@ const Userpopupbox = () => {
       }, []);
 
 
-      const sendClickData = (role) => {
+      const sendClickData = (role: string) => {
         console.log('API_URL', API_URL);
         setConfirmPopUp(true);
         fetch(`${API_URL}send-email`, {
@@ -66,10 +66,10 @@ return (
         {popUp && (
             <div className={`user-popup-box ${popUp ? "popup-animation" : ""}`}>
                 <div className='d-flex justify-content-between'>
-                    <h6>Hello Stranger</h6>
+                    <h6>I'm glad you're here!</h6>
                     <button className='close-popup-button' title='Close' onClick={() => setPopUp(false)}><FontAwesomeIcon icon={faTimes} /></button>
                 </div>
-                <p>Your insights matter! Please select your role below to help me understand the purpose of your visit.</p>
+                <p>Please select your role below to help me understand the purpose of your visit.</p>
                 <div className='mt-4'>
                     <button className='user-popup-button' onClick={() => sendClickData('Visitor')}>Visitor</button>
                     <button className='user-popup-button mx-2' onClick={() => sendClickData('Recruiter')}>Recruiter</button>

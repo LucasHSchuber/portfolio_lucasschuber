@@ -63,23 +63,23 @@
 .user-popup-box{
     position: fixed;
     border-radius: 10px;
-    bottom:2em;
-    left: 1em;
+    bottom:3em;
+    left: 2.5em;
     width: 35%;
     height: fit-content;
-    background-color: #2e2e2e;
-    color: rgb(246, 246, 246);
+    background-color: #ffffff;
+    color: rgb(42, 42, 42);
     z-index: 20;
-    padding: 2.2em 2.5em;
+    padding: 1.5em 1.5em;
     text-align: left;
-    box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.1);
 }
 .user-popup-box h6{
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: 200;
 }
 .user-popup-box p{
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
 }
 .popup-animation{
@@ -111,16 +111,16 @@
 .user-popup-confirm-box{
     position: fixed;
     border-radius: 10px;
-    bottom:2em;
-    left: 1em;
-    width: 13em;
-    height: 5em;
-    background-color: #2e2e2e;
-    color: rgb(246, 246, 246);
+    bottom:3em;
+    left: 2.5em;
+    width: 9em;
+    height: fit-content;
+    background-color: #ffffff;
+    color: rgb(42, 42, 42);
     z-index: 20;
-    padding: 2em 2em;
+    padding: 1.5em 1.5em 1em 1.5em;
     text-align: left;
-    box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.1);
 }
 .user-popup-confirm-box h6{
     font-weight: 500;
