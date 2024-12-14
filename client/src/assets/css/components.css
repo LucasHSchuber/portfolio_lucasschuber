@@ -51,6 +51,9 @@ background-color: #ddd;
     /* font-size: 24px; */
 }
 
+.old-portfolio{
+    margin-top: 2em;
+}
 .old-portfolio h6 {
     font-size: 0.9em;
     font-weight: 600;
@@ -151,5 +154,18 @@ background-color: #ddd;
         font-size: 10px;
         padding: 19px 0 0 5px; 
     }
-    
+    .old-portfolio{
+        margin-top: 1em;
+    }
+    .old-portfolio h6 {
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    .old-portfolio a {
+        text-decoration: underline;
+        font-size: 0.8em;
+        font-weight: 700;
+        color: black;
+        transition: 0.2s;
+    }
 }

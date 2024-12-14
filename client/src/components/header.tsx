@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ colorfy }) => {
             </div>
           </div>
 
-          <div className='mt-4 old-portfolio'>
+          <div className='old-portfolio'>
             <h6 style={{ width: "15em" }}>Visit my old portfolio to see more design work:</h6>
             <a className='' title='https://lucasschuberportfolioold.vercel.app/#/' href="https://lucasschuberportfolioold.vercel.app/#/" target="_blank">lucasschuberportfolioold.vercel.app</a>
           </div>
