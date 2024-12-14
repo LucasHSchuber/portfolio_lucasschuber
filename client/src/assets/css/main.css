@@ -149,7 +149,7 @@
 
 @media screen and (max-width: 980px) {
     .user-popup-box{
-        width: 90%;
+        width: fit-content;
         height: fit-content;
         background-color: #ffffff;
         color: rgb(42, 42, 42);
@@ -163,7 +163,8 @@
         font-weight: 400;
     }
     .user-popup-box p{
-        font-size: 0.8em;
+        width: 20em;
+        font-size: 0.9em;
         font-weight: 200;
     }
 }
