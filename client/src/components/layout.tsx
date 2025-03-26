@@ -11,6 +11,7 @@ import { faInstagram, faGithub, faFacebook, faLinkedin } from '@fortawesome/free
 // import media
 import video from "../assets/videos/bg3.mp4";
 import bgImage from "../assets/images/bg_phones.png";
+// import smile from "../assets/images/smile.png"
 
 //import components
 import Header from './header.js';
@@ -46,7 +47,10 @@ function Layout({ children }) {
   return (
     <div className='layout'>
         {loading ? (
-         <div className='start-loader'>Lucas H. Schuber</div>
+         <div className='start-loader'>
+          <p>Lucas H. Schuber</p>
+          {/* <img src={smile} alt='smile'></img> */}
+          </div>
         ) : (
 
         <motion.div
@@ -84,10 +88,9 @@ function Layout({ children }) {
             </div>
 
             
-            <div className='outside-top d-flex '>
-              <h6 className=''>Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretariBonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.
-              </h6>
-            </div>
+            {/* <div className='outside-top d-flex '>
+              <h6 className=''>Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretariBonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari.Bonum diem habeas.Modo scivi te hoc interpretari. </h6>
+            </div> */}
 
 
             <div className="wrapper" >  

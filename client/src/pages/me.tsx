@@ -63,6 +63,12 @@ function Me() {
                 <FontAwesomeIcon icon={faGithub} className='me-brand-icon' />
             </a>
           </div>
+
+          <div className='old-portfolio'>
+            <h6>Visit my old portfolio to see more design work:</h6>
+            <a className='' title='https://lucasschuberportfolioold.vercel.app/#/' href="https://lucasschuberportfolioold.vercel.app/#/" target="_blank">lucasschuberportfolioold.vercel.app</a>
+          </div>
+
         </div>
         )}
         </motion.div>
