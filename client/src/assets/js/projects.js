@@ -1,6 +1,7 @@
 // projects.js
 import MindspacePNG from "../images/mindspace.png"
 import KeepupPNG from "../images/keepup.png"
+import QuiviumPNG from "../images/quiviumimg.png"
 import PpPNG from "../images/pp.png"
 import AiasPNG from "../images/aias.png"
 import FlimPNG from "../images/flim.png"
@@ -10,6 +11,14 @@ import BookiePNG from "../images/bookie.png"
 import NordfjallPNG from "../images/nordfjall.png"
 
 const projects = [
+    {
+      project: "Quivium",
+      info: "Electron.js/React.js/Node.js/SQLite",
+      year: "2025",
+      description: "From this website you can dowload Quivium application which is an to-do desktop application with a built in sqlite database, perfect for those who needs to organize your notes and tasks in different lists. It's a user tested, streamlined, minimalistic windows desktop application 100% free to download and use.",
+      src: QuiviumPNG,
+      domain: "https://quivium.vercel.app/",
+    },
     {
       project: "Photographer Portal",
       info: "Electron.js/React.js/Node.js/SQLite",
